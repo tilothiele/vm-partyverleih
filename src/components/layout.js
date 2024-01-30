@@ -37,11 +37,21 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
+            display: 'flex',
+            justifyContent: 'center'
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <a href="/md/impressum/"
+            style={{
+              marginRight: `var(--space-2)`,
+            }}
+          >Impressum</a>
+          <a href="/md/preise/"
+            style={{
+              marginRight: `var(--space-2)`,
+            }}
+          >Preise</a>
+          <a href="/md/agb/">AGBs</a>
         </footer>
       </div>
     </>

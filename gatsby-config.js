@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Vier & Marschlander Partyservice`,
+    description: `Verleih von Bierwagen und Zubehör für Feiern un Partys.`,
+    author: `tilo.thiele@hamburg.de`,
+    siteUrl: `https://vm-partyservice.de/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -23,8 +23,19 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
