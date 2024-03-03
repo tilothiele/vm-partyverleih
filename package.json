@@ -1,11 +1,16 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "vm-partyservice",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Webauftritt Vier- und Marschländer Partyservice",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Tilo Thiele <tilo.thiele@hamburg.de>",
   "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
     "gatsby": "^5.13.2",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^3.13.1",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
@@ -14,11 +19,10 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "github-pages": "^3.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-multi-carousel": "^2.8.4",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "prettier": "^2.8.8"
   },
   "keywords": [
@@ -32,7 +36,8 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",

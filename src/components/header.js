@@ -6,12 +6,22 @@ const Header = ({ siteTitle }) => (
   <header
     style={{
       margin: `0 auto`,
-      padding: `var(--space-4) var(--size-gutter)`,
+      maxWidth: `var(--size-content)`,
+      padding: `0 var(--size-gutter)`,
       display: `flex`,
       alignItems: `center`,
       justifyContent: `space-between`,
     }}
   >
+    <StaticImage
+        src="../images/vm-partyservice-logo.png"
+        loading="eager"
+        height={100}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt=""
+        style={{ margin: 0 }}
+      />
     <Link
       to="/"
       style={{
@@ -21,15 +31,6 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
-    <StaticImage
-        src="../images/vm-partyservice-logo.jpg"
-        loading="eager"
-        height={50}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ margin: 0 }}
-      />
   </header>
 )
 
