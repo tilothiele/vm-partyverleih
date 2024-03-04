@@ -14,7 +14,6 @@ module.exports = {
     author: `tilo.thiele@hamburg.de`,
     siteUrl: `https://vm-partyservice.de/`,
   },
-  pathPrefix: "/vm-partyservice",
   plugins: [
     `gatsby-plugin-image`,
     {
