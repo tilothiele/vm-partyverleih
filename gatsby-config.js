@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Vier & Marschlander Partyservice`,
-    description: `Verleih von Bierwagen und Zubehör für Feiern un Partys.`,
+    description: `Verleih von Bierwagen und Zubehör für Feiern un Partys für das Vier- und Marschland und dem Raum Hamburg.`,
     author: `tilo.thiele@hamburg.de`,
     siteUrl: `https://vm-partyservice.de/`,
   },
