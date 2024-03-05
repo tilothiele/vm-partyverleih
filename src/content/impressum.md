@@ -1,14 +1,14 @@
 ---
 slug: "/impressum"
 date: "2024-01-31"
-title: "Vier- und Marschländer Partyservice - Impressum"
+title: "Vier und Marschländer Partyservice - Impressum"
 ---
 
 # Impressum
 
 ## Diensteanbieter
 
-* Vier- und Marschland Partyservice
+* Vier und Marschländer Partyverleih
 * Deichstraße 1
 * 12345 Entenhausen
 

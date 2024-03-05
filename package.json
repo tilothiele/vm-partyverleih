@@ -1,7 +1,7 @@
 {
   "name": "vm-partyservice",
   "private": true,
-  "description": "Webauftritt Vier- und Marschländer Partyservice",
+  "description": "Vier und Marschländer Partyverleih",
   "version": "0.1.0",
   "author": "Tilo Thiele <tilo.thiele@hamburg.de>",
   "dependencies": {
