@@ -4,15 +4,17 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HeroSection from "../components/HeroSection"
 import Img from "gatsby-image"
-import { graphql } from 'gatsby'
+//import { graphql } from 'gatsby'
 import { Card, CardContent, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-
+import { Link, CardActionArea } from '@mui/material';
+import { StaticImage } from "gatsby-plugin-image"
 import "./index.css"
 
-const IndexPage = ({data}) => {
-  const {allFile} = data;
+const IndexPage = () => {
+//  const {allFile} = data;
+
+  const card_wh = 400
 
   return (
   <Layout>
@@ -35,27 +37,100 @@ const IndexPage = ({data}) => {
 
     <div>
       <Grid container spacing={2}>
-      {allFile.edges.map(img => (
-          <Grid item>
-            <Card sx={{ maxWidth: 400 }}>
-              <CardActionArea>
-                <Img
-                  fixed={img.node.childImageSharp.fixed}
-                  alt={img.node.base}
 
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Bierwagen {img.node.base}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum ...
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
+      <Grid item>
+            <Link href="wagen1">
+              <Card sx={{ maxWidth: 400 }}>
+                <CardActionArea>
+                  <StaticImage src="../images/carousel/20210821_143706.jpg" alt="Bierwagen 1"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={card_wh}
+                    height={card_wh}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Bierwagen #1
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lorem ipsum ...
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
           </Grid>
-        ))}
+
+
+          <Grid item>
+            <Link href="wagen2">
+              <Card sx={{ maxWidth: 400 }}>
+                <CardActionArea>
+                  <StaticImage src="../images/carousel/20220214_150918.jpg" alt="Bierwagen 2"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={card_wh}
+                    height={card_wh}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Bierwagen #2
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lorem ipsum ...
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Grid>
+
+          <Grid item>
+            <Link href="wagen2">
+              <Card sx={{ maxWidth: 400 }}>
+                <CardActionArea>
+                  <StaticImage src="../images/carousel/20220625_111737.jpg" alt="Bierwagen 3"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={card_wh}
+                    height={card_wh}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Bierwagen #3
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lorem ipsum ...
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Grid>
+
+          <Grid item>
+            <Link href="wagen4">
+              <Card sx={{ maxWidth: 400 }}>
+                <CardActionArea>
+                  <StaticImage src="../images/carousel/DSC_0031.JPG" alt="Bierwagen 4"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={card_wh}
+                    height={card_wh}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                      Bierwagen #4
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Lorem ipsum ...
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Link>
+          </Grid>
+
       </Grid>
     </div>
 
@@ -83,19 +158,19 @@ export const Head = () => <Seo title="Home" />
 
 export default IndexPage
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    allFile(filter: {relativeDirectory: {eq: "carousel"}}) {
-      edges {
-        node {
-          base,
-          childImageSharp {
-            fixed(height: 300, width: 395) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     allFile(filter: {relativeDirectory: {eq: "carousel"}}) {
+//       edges {
+//         node {
+//           base,
+//           childImageSharp {
+//             fixed(height: 300, width: 395) {
+//               ...GatsbyImageSharpFixed
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//`
