@@ -20,16 +20,19 @@ const Header = ({ siteTitle }) => (
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt=""
-        style={{ margin: 0 }}
+        style={{ margin: 0}}
       />
     <Link
       to="/"
       style={{
-        fontSize: `var(--font-sm)`,
+        fontSize: `var(--font-md)`,
         textDecoration: `none`,
+        textAlign: "center"
       }}
     >
       {siteTitle}
+      <br></br>
+      In Hamburg und Umgebung
     </Link>
   </header>
 )
