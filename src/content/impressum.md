@@ -9,13 +9,14 @@ title: "Vier und Marschländer Partyservice - Impressum"
 ## Diensteanbieter
 
 * Vier und Marschländer Partyverleih
-* Deichstraße 1
-* 12345 Entenhausen
+* Gerald Schümann
+* Norderquerweg 41
+* 21037 Hamburg
 
 ## Kontaktmöglichkeiten
 
-* E-Mail-Adresse: durstiger.gaertner@vm-partyservice.de
-* Telefon: 0150 1234567
+* E-Mail-Adresse: gerald.schuemann@t-online.de
+* Telefon: +49 (0)170 723 33 39
 
 ## Angaben zum Unternehmen
 
