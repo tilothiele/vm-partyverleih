@@ -7,9 +7,23 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Box } from "@mui/material";
+import { ThemeProvider, createTheme } from "@emotion/react"
 
 import Header from "./header"
 import "./layout.css"
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#00ff00"
+    },
+    text: {
+      primary: "#ff88dd"
+    }
+  },
+});
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,16 +37,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
+      <Box
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
         }}
       >
-        <main>{children}</main>
-        <footer
+        <Box variant="main">{children}</Box>
+        <Box variant="footer">
           style={{
             marginTop: `var(--space-5)`,
             fontSize: `var(--font-sm)`,
@@ -51,9 +65,9 @@ const Layout = ({ children }) => {
             }}
           >Preise</a>
           <a href="/md/agb/">AGBs</a>
-        </footer>
-      </div>
-    </>
+        </Box>
+      </Box>
+    </ThemeProvider>
   )
 }
 

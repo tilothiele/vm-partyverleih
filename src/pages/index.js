@@ -3,9 +3,9 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HeroSection from "../components/HeroSection"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 //import { graphql } from 'gatsby'
-import { Row, Card, CardContent, Grid } from '@mui/material';
+import { Box, Card, CardContent, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { Link, CardActionArea } from '@mui/material';
 import { StaticImage } from "gatsby-plugin-image"
@@ -20,7 +20,7 @@ const IndexPage = () => {
   <Layout>
     <HeroSection />
 
-    <Row>
+    <Box>
       <Typography gutterBottom variant="h5" component="div">Textblock #1</Typography>
       <Typography gutterBottom component="p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -28,14 +28,16 @@ const IndexPage = () => {
       <Typography gutterBottom component="p">Sie wollen...? Hier sind sie richtig!</Typography>
       <Typography gutterBottom component="p">Warum wir?</Typography>
       <Typography gutterBottom component="p">Wir bieten...</Typography>
-    </Row>
+    </Box>
 
-    <div>
-      <h2>Unsere Bierwagenflotte</h2>
-      <p>Ihnen stehen vier Bierwagen unterschiedlicher Größe und Ausstattung zur Auswahl. Es ist für jeden Anlass das passende dabei:</p>
-    </div>
+    <Box>
+    <Typography variant="h5">Unsere Bierwagenflotte</Typography>
+      <Typography>
+        Ihnen stehen vier Bierwagen unterschiedlicher Größe und Ausstattung zur Auswahl. Es ist für jeden Anlass das passende dabei:</Typography>
 
-    <div>
+    </Box>
+
+    <Box>
       <Grid container spacing={2}>
 
       <Grid item>
@@ -132,18 +134,20 @@ const IndexPage = () => {
           </Grid>
 
       </Grid>
-    </div>
+    </Box>
 
-    <div>
-      <h2>Textblock #2</h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+    <Box>
+      <Typography variant="h5">Textblock #2</Typography>
+      <Typography>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         At vero eos et accusam et justo duo dolores et ea rebum. S
         tet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
         dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    </div>
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Typography>
+
+    </Box>
 
   </Layout>
 )
@@ -173,4 +177,4 @@ export default IndexPage
 //       }
 //     }
 //   }
-//`
+// `
