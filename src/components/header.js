@@ -21,6 +21,7 @@ const Header = ({ siteTitle }) => (
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ margin: 0}}
+        backgroundColor="#ffffff"
       />
     <Link
       to="/"

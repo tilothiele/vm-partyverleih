@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import HeroSection from "../components/HeroSection"
 import Img from "gatsby-image"
 //import { graphql } from 'gatsby'
-import { Card, CardContent, Grid } from '@mui/material';
+import { Row, Card, CardContent, Grid } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { Link, CardActionArea } from '@mui/material';
 import { StaticImage } from "gatsby-plugin-image"
@@ -20,15 +20,15 @@ const IndexPage = () => {
   <Layout>
     <HeroSection />
 
-    <div>
-      <h2>Textblock #1</h2>
-      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+    <Row>
+      <Typography gutterBottom variant="h5" component="div">Textblock #1</Typography>
+      <Typography gutterBottom component="p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
         invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-        At vero eos et accusam et justo duo dolores et ea rebum...</p>
-        <p>Sie wollen...? Hier sind sie richtig!</p>
-        <p>Warum wir?</p>
-        <p>Wir bieten...</p>
-    </div>
+        At vero eos et accusam et justo duo dolores et ea rebum...</Typography>
+      <Typography gutterBottom component="p">Sie wollen...? Hier sind sie richtig!</Typography>
+      <Typography gutterBottom component="p">Warum wir?</Typography>
+      <Typography gutterBottom component="p">Wir bieten...</Typography>
+    </Row>
 
     <div>
       <h2>Unsere Bierwagenflotte</h2>
@@ -86,7 +86,7 @@ const IndexPage = () => {
           </Grid>
 
           <Grid item>
-            <Link href="wagen2">
+            <Link href="wagen3">
               <Card sx={{ maxWidth: 400 }}>
                 <CardActionArea>
                   <StaticImage src="../images/carousel/20220625_111737.jpg" alt="Bierwagen 3"

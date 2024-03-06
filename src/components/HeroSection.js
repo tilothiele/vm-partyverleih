@@ -11,7 +11,7 @@ const HeroSection = () => {
         height={300} // adjust as needed
         quality={95}
         formats={["auto", "webp", "avif"]}
-        alt="Hero Image"
+        alt="Kopfbild"
         style={{ width: '100%', height: '100%' }}
       />
     </div>
