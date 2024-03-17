@@ -4,7 +4,7 @@ date: "2024-01-31"
 title: "Vier und Marschländer Partyservice - Impressum"
 ---
 
-# Impressum
+# Impressum und Datenschutzerklärung
 
 ## Diensteanbieter
 
@@ -24,9 +24,12 @@ title: "Vier und Marschländer Partyservice - Impressum"
 * Wirtschafts-Identifikationsnummer (W-IdNr): 9876543210
 * Geschäftsbereich: Deutschland
 
-AGB: https://vm-partyservice.de/md/agb
-
 Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke
 
-https://datenschutz-generator.de/
+(https://datenschutz-generator.de/)
 
+https://www.wbs.legal/it-und-internet-recht/datenschutzrecht/datenschutzerklaerung/datenschutzgenerator/#generator
+
+## Bilder
+
+Gerald Schümann, Tilo Thiele

@@ -6,9 +6,9 @@ const HeroSection = () => {
   return (
     <div className="hero-section">
       <StaticImage
-        src="../images/hero-image.jpg" // replace with your hero image path
+        src="../images/bierwagen-blurred-bg.png"
         loading="eager"
-        height={300} // adjust as needed
+        height={500}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="Kopfbild"
