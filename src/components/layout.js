@@ -8,7 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Box } from "@mui/material";
-import { ThemeProvider, createTheme } from "@emotion/react"
+import { ThemeProvider } from "@emotion/react"
+import { createTheme } from '@mui/material/styles';
 
 import Header from "./header"
 import "./layout.css"
@@ -46,9 +47,10 @@ const Layout = ({ children }) => {
         }}
       >
         <Box variant="main">{children}</Box>
-        <Box variant="footer">
+        <Box variant="footer"
           style={{
-            marginTop: `var(--space-5)`,
+            marginTop: `var(--space-4)`,
+            marginBottom: `var(--space-4)`,
             fontSize: `var(--font-sm)`,
             display: 'flex',
             justifyContent: 'center'
@@ -58,13 +60,13 @@ const Layout = ({ children }) => {
             style={{
               marginRight: `var(--space-2)`,
             }}
-          >Impressum</a>
-          <a href="/md/preise/"
+          >Impressum&Datenschutz</a>
+          {/* <a href="/md/preise/"
             style={{
               marginRight: `var(--space-2)`,
             }}
-          >Preise</a>
-          <a href="/md/agb/">AGBs</a>
+          >Preise</a> */}
+          {/* <a href="/md/agb/">AGBs</a> */}
         </Box>
       </Box>
     </ThemeProvider>

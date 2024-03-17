@@ -20,24 +20,41 @@ const IndexPage = () => {
   <Layout>
     <HeroSection />
 
-    <Box>
-      <Typography gutterBottom variant="h5" component="div">Textblock #1</Typography>
-      <Typography gutterBottom component="p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-        At vero eos et accusam et justo duo dolores et ea rebum...</Typography>
-      <Typography gutterBottom component="p">Sie wollen...? Hier sind sie richtig!</Typography>
-      <Typography gutterBottom component="p">Warum wir?</Typography>
-      <Typography gutterBottom component="p">Wir bieten...</Typography>
+    <Box sx={{'margin-top': '1em'}} className="text-content">
+      <Typography gutterBottom variant="h5">Damit auch Ihr Party-Event ein voller Erfolg wird,</Typography>
+      <Typography gutterBottom component="p">
+        nutzen Sie unser Angebot und mieten Sie einen unserer professionell ausgestatteten Bierwagen und weiteres Party-Equpipment.</Typography>
+        <Typography gutterBottom variant="h5" sx={{'margin-top': '1em'}} >Kontaktieren Sie uns.</Typography>
+        <Typography gutterBottom component="p">Rufen Sie uns an unter</Typography>
+        <Typography gutterBottom component="p">+49 (0)170 723 33 39</Typography>
+        <Typography gutterBottom component="p">oder schicken Sie uns eine Mail an:</Typography>
+        <Typography gutterBottom component="p">info@vm-partyverleih.de</Typography>
+        <Typography gutterBottom component="p">Wir beraten Sie gerne und finden heraus, welches Angebot für Sie am besten passt. Wir freuen uns auf Ihre Nachricht!</Typography>
+        </Box>
+
+    <Box className="text-content">
+      <Typography gutterBottom variant="h5"  sx={{'margin-top': '1em', 'margin-bottom': '1em'}}>"Im Vier- und Marschland sprechen wir gerne durch die Blume und genießen in geselliger Runde ein kühles Bier."</Typography>
     </Box>
 
     <Box>
-    <Typography variant="h5">Unsere Bierwagenflotte</Typography>
-      <Typography>
-        Ihnen stehen vier Bierwagen unterschiedlicher Größe und Ausstattung zur Auswahl. Es ist für jeden Anlass das passende dabei:</Typography>
-
+      <StaticImage
+          src="../images/vm-partyverleih-blumen.png"
+          loading="eager"
+          height={300} // adjust as needed
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt="Kopfbild"
+          style={{ width: '100%', height: '100%' }}
+        />
     </Box>
 
-    <Box>
+    <Box className="text-content" sx={{'margin-top': '1em', 'margin-bottom': '1em'}}>
+      <Typography gutterBottom component="p">In diesem Sinne wünschen wir Ihnen ein Gutes Gelingen!</Typography>
+      <Typography gutterBottom component="p">Ihr</Typography>
+      <Typography gutterBottom component="p">Gerald Schümann</Typography>
+    </Box>
+
+    {/* <Box>
       <Grid container spacing={2}>
 
       <Grid item>
@@ -134,20 +151,8 @@ const IndexPage = () => {
           </Grid>
 
       </Grid>
-    </Box>
+    </Box> */}
 
-    <Box>
-      <Typography variant="h5">Textblock #2</Typography>
-      <Typography>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-        At vero eos et accusam et justo duo dolores et ea rebum. S
-        tet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</Typography>
-
-    </Box>
 
   </Layout>
 )
