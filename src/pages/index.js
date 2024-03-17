@@ -48,6 +48,12 @@ const IndexPage = () => {
         />
     </Box>
 
+    <Box className="text-content" sx={{'margin-top': '1em', 'margin-bottom': '1em'}}>
+      <Typography gutterBottom component="p">In diesem Sinne wünschen wir Ihnen ein Gutes Gelingen!</Typography>
+      <Typography gutterBottom component="p">Ihr</Typography>
+      <Typography gutterBottom component="p">Gerald Schümann</Typography>
+    </Box>
+
     {/* <Box>
       <Grid container spacing={2}>
 
