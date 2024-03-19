@@ -6,6 +6,8 @@ title: "Vier und Marschländer Partyservice - Impressum"
 
 # Impressum
 
+Dieses Impressum gilt für alle Angebote auf den Seiten unter der Domain vm-partyverleih.de und aller Subdomains.
+
 ## Angaben gemäß §5 TMG
 
 Vier und Marschländer Partyverleih
