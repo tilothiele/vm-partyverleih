@@ -5,16 +5,16 @@ import Seo from "../components/seo"
 import HeroSection from "../components/HeroSection"
 //import Img from "gatsby-image"
 //import { graphql } from 'gatsby'
-import { Box, Card, CardContent, Grid } from '@mui/material';
+import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import { Link, CardActionArea } from '@mui/material';
+import { List, ListItem } from '@mui/material';
 import { StaticImage } from "gatsby-plugin-image"
 import "./index.css"
 
 const IndexPage = () => {
 //  const {allFile} = data;
 
-  const card_wh = 400
+  //const card_wh = 400
 
   return (
   <Layout>
@@ -52,6 +52,18 @@ const IndexPage = () => {
       <Typography gutterBottom component="p">In diesem Sinne wünschen wir Ihnen ein Gutes Gelingen!</Typography>
       <Typography gutterBottom component="p">Ihr</Typography>
       <Typography gutterBottom component="p">Gerald Schümann</Typography>
+    </Box>
+
+    <Box className="text-content" sx={{'margin-top': '1em', 'margin-bottom': '1em'}}>
+      <Typography gutterBottom variant="h5">Netzwerk / Partnerdienste:</Typography>
+      <Typography gutterBottom component="p">Weitere Anbieter von Partyausrüstungen wie Zelte zum Mieten oder Catering:</Typography>
+
+      <Typography gutterBottom component="p">
+        <ul>
+          <li><a href="https://elze-event.de/">https://elze-event.de/</a></li>
+          <li><a href="https://www.ralles-partyzelte.de/">https://www.ralles-partyzelte.de/</a></li>
+        </ul>
+      </Typography>
     </Box>
 
     {/* <Box>
