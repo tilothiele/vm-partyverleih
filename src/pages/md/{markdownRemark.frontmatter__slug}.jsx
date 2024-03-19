@@ -9,7 +9,7 @@ export default function BlogPostTemplate({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-        <div>
+        <div class="text-content">
             <h1>{frontmatter.title}</h1>
             <h2>{frontmatter.date}</h2>
             <div
