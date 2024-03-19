@@ -25,9 +25,9 @@ const IndexPage = () => {
       <Typography gutterBottom component="p">
         nutzen Sie unser Angebot und mieten Sie einen unserer professionell ausgestatteten Bierwagen und weiteres Party-Equpipment.</Typography>
         <Typography gutterBottom variant="h5" sx={{'margin-top': '1em'}} >Kontaktieren Sie uns.</Typography>
-        <Typography gutterBottom component="p">Rufen Sie uns an unter</Typography>
+        <Typography gutterBottom component="p">Rufen Sie uns an oder schicken Sie uns eine WhatsApp-Nachricht (bevorzugt):</Typography>
         <Typography gutterBottom component="p">+49 (0)170 723 33 39</Typography>
-        <Typography gutterBottom component="p">oder schicken Sie uns eine Mail an:</Typography>
+        <Typography gutterBottom component="p">Sie können uns auch gerne eine Mail zusenden an:</Typography>
         <Typography gutterBottom component="p">info@vm-partyverleih.de</Typography>
         <Typography gutterBottom component="p">Wir beraten Sie gerne und finden heraus, welches Angebot für Sie am besten passt. Wir freuen uns auf Ihre Nachricht!</Typography>
         </Box>
