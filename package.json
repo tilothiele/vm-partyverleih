@@ -22,7 +22,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
+    "node-scp": "^0.0.23",
     "prettier": "^2.8.8"
   },
   "keywords": [
@@ -37,7 +37,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && node deploy"
   },
   "repository": {
     "type": "git",
