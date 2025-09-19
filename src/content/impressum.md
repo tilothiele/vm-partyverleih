@@ -17,7 +17,7 @@ Norderquerweg 41 \
 21037 Hamburg
 
 EMail: gerald-schuemann@t-online.de \
-WhatsApp und Handy: +49 (0) 170 723 33 39
+Handy: +49 (0) 170 723 33 39
 
 USt.Id: DE191431527
 
