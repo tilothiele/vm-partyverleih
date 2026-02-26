@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HeroSection from "../components/HeroSection"
+import ImageCarousel from "../components/ImageCarousel"
 //import Img from "gatsby-image"
 //import { graphql } from 'gatsby'
 import { Box } from '@mui/material';
@@ -12,32 +13,33 @@ import { StaticImage } from "gatsby-plugin-image"
 import "./index.css"
 
 const IndexPage = () => {
-//  const {allFile} = data;
+  //  const {allFile} = data;
 
   //const card_wh = 400
 
   return (
-  <Layout>
-    <HeroSection />
+    <Layout>
+      <HeroSection />
 
-    <Box sx={{'margin-top': '1em'}} className="text-content">
-      <Typography gutterBottom variant="h5">Damit auch Ihr Party-Event ein voller Erfolg wird,</Typography>
-      <Typography gutterBottom component="p">
-        nutzen Sie unser Angebot und mieten Sie einen unserer professionell ausgestatteten Bierwagen und weiteres Party-Equpipment.</Typography>
-        <Typography gutterBottom variant="h5" sx={{'margin-top': '1em'}} >Kontaktieren Sie uns.</Typography>
+      <Box sx={{ 'margin-top': '1em' }} className="text-content">
+        <Typography gutterBottom variant="h5">Damit auch Ihr Party-Event ein voller Erfolg wird,</Typography>
+        <Typography gutterBottom component="p">
+          nutzen Sie unser Angebot und mieten Sie einen unserer professionell ausgestatteten Bierwagen und weiteres Party-Equpipment.</Typography>
+        <ImageCarousel />
+        <Typography gutterBottom variant="h5" sx={{ 'margin-top': '1em' }} >Kontaktieren Sie uns.</Typography>
         <Typography gutterBottom component="p">Rufen Sie uns an:</Typography>
-        <Typography gutterBottom component="p">+49 (0)170 723 33 39</Typography>
-        <Typography gutterBottom component="p">Sie können uns auch gerne eine Mail zusenden an (bevorzugt):</Typography>
+        <Typography gutterBottom component="p">+49 (0)170 723 33 39 (bevorzugt)</Typography>
+        <Typography gutterBottom component="p">Sie können uns auch gerne eine Mail zusenden an:</Typography>
         <Typography gutterBottom component="p">info@vm-partyverleih.de</Typography>
         <Typography gutterBottom component="p">Wir beraten Sie gerne und finden heraus, welches Angebot für Sie am besten passt. Wir freuen uns auf Ihre Nachricht!</Typography>
-        </Box>
+      </Box>
 
-    <Box className="text-content">
-      <Typography gutterBottom variant="h5"  sx={{'margin-top': '1em', 'margin-bottom': '1em'}}>"Im Vier- und Marschland sprechen wir gerne durch die Blume und genießen in geselliger Runde ein kühles Bier."</Typography>
-    </Box>
+      <Box className="text-content">
+        <Typography gutterBottom variant="h5" sx={{ 'margin-top': '1em', 'margin-bottom': '1em' }}>"Im Vier- und Marschland sprechen wir gerne durch die Blume und genießen in geselliger Runde ein kühles Bier."</Typography>
+      </Box>
 
-    <Box>
-      <StaticImage
+      <Box>
+        <StaticImage
           src="../images/vm-partyverleih-blumen.png"
           loading="eager"
           height={300} // adjust as needed
@@ -46,27 +48,27 @@ const IndexPage = () => {
           alt="Kopfbild"
           style={{ width: '100%', height: '100%' }}
         />
-    </Box>
+      </Box>
 
-    <Box className="text-content" sx={{'margin-top': '1em', 'margin-bottom': '1em'}}>
-      <Typography gutterBottom component="p">In diesem Sinne wünschen wir Ihnen ein Gutes Gelingen!</Typography>
-      <Typography gutterBottom component="p">Ihr</Typography>
-      <Typography gutterBottom component="p">Gerald Schümann</Typography>
-    </Box>
+      <Box className="text-content" sx={{ 'margin-top': '1em', 'margin-bottom': '1em' }}>
+        <Typography gutterBottom component="p">In diesem Sinne wünschen wir Ihnen ein Gutes Gelingen!</Typography>
+        <Typography gutterBottom component="p">Ihr</Typography>
+        <Typography gutterBottom component="p">Gerald Schümann</Typography>
+      </Box>
 
-    <Box className="text-content" sx={{'margin-top': '1em', 'margin-bottom': '1em'}}>
-      <Typography gutterBottom variant="h5">Netzwerk / Partnerdienste:</Typography>
-      <Typography gutterBottom component="p">Weitere Anbieter von Partyausrüstungen wie Zelte zum Mieten oder Catering:</Typography>
+      <Box className="text-content" sx={{ 'margin-top': '1em', 'margin-bottom': '1em' }}>
+        <Typography gutterBottom variant="h5">Netzwerk / Partnerdienste:</Typography>
+        <Typography gutterBottom component="p">Weitere Anbieter von Partyausrüstungen wie Zelte zum Mieten oder Catering:</Typography>
 
-      <Typography gutterBottom component="p">
-        <ul>
-          <li><a href="https://elze-event.de/">https://elze-event.de/</a></li>
-          <li><a href="https://www.ralles-partyzelte.de/">https://www.ralles-partyzelte.de/</a></li>
-        </ul>
-      </Typography>
-    </Box>
+        <Typography gutterBottom component="p">
+          <ul>
+            <li><a href="https://elze-event.de/">https://elze-event.de/</a></li>
+            <li><a href="https://www.hamburg-event-team.de/">https://www.hamburg-event-team.de/</a></li>
+          </ul>
+        </Typography>
+      </Box>
 
-    {/* <Box>
+      {/* <Box>
       <Grid container spacing={2}>
 
       <Grid item>
@@ -166,8 +168,8 @@ const IndexPage = () => {
     </Box> */}
 
 
-  </Layout>
-)
+    </Layout>
+  )
 }
 
 /**
